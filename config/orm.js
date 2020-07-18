@@ -2,6 +2,9 @@
 const connection = require("../config/connection.js");
 
 // Object for all our SQL statement functions.
+
+
+
 const orm = {
   all: (tableInput, cb) => {
     const queryString = "SELECT * FROM ??";
@@ -51,6 +54,5 @@ const orm = {
     });
   },
 };
-
 // Export the orm object
 module.exports = orm;
